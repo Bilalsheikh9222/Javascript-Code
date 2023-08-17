@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="js/25-Event.js"> -- ye work nh karrha function js file sai  -->
+    <script>
+            function hello(){
+                // document.write("This is event");
+                alert("This is Event");
+            }
+    </script>
+    <title>25 - Event</title>
+</head>
+<!-- <body onkeypress="hello()"> -->
+<!-- <body onresize="hello()"> -->
+<body onload="hello()">
+    <button onclick="hello()">Click Me</button>
+    <!-- This is double click event  -->
+    <p ondblclick="hello()">Double click on me <br/></p>
+    <!-- This is right click event -->
+    <p oncontextmenu="hello()">Right click on me<br/></p>
+    <!-- ON mouse Enter event -->
+    <p onmouseenter="hello()">on Mouse Enter</p>
+    <!-- ON mouse Out -->
+    <p onmouseout="hello()">On Mouse Out</p>
+    <!-- ON mouse Down -->
+    <p onmousedown="hello()">On Mouse Down - Same as onclick</p>
+    <!-- ON mouse up -->
+    <p onmouseup="hello()">On Mouse Up - jese he mouse button leave kro gy </p>
+    <!-- ON keypress -->
+    <p onkeypress="hello()">ON keypress work only - <b>body tag or forms</b></p>
+    <!-- Windows Event -->
+    <h1>Windows Event - only work on body tag</h1>
+    <!-- ON resize - window -->
+    <p onresize="hello()">on resize call from body tag</p>
+    <!-- ON Scroll -->
+    <p onscroll="hello()">on scroll also call from div or paragraph and so on.</p>
+    <!-- On load - like - browser -->
+    <p onload="hello()">onload use from body tag</p>
+    <!-- On unload - like - brower -->
+    <p onunload="hello()">Onunload user from body tag</p>
+</body>
+</html>
