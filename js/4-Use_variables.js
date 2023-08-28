@@ -1,4 +1,4 @@
-// Three Types of Comments 1.Var - 2.Let  - 3.Const ----- for Error check console
+// Three Types of Variable 1.Var - 2.Let  - 3.Const ----- for Error check console
 // don't start variable with numeric through an error & space - like first name, 99firstname.
 var a = "Use Variable";
 // declare and value assign
