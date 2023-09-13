@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some() And every()</title>
+</head>
+<body>
+    <h1>some() And every()</h1>
+    <script>
+            // some() and every() Cannot use without function -- anyone value should be true
+            var a = [10,20,30,40];
+            document.write(a + "<br/>");
+
+            var b = a.some(checkA);
+            document.write(b + "<br/>");
+
+            // like if else - work
+            function checkA(a){
+                return(a >= 18);
+            }
+            // some End
+            
+            // every() -- every value should be true -- like this greator than or less than [20,30,40,50]
+            var c = [40,30,20,10];
+            document.write(c + "<br/>");
+
+            var d = c.every(checkValue);
+            document.write(d + "<br/>");
+
+            function checkValue(c){
+                return (c >= 18);
+            }
+    </script>
+</body>
+</html>
