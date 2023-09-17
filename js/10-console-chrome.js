@@ -5,7 +5,7 @@ console.time("Test");
 console.log([1,2,3]);
 console.table([9,10,11]);
 console.error("Something went wrong");
-console.warn("This is jus warning");
+console.warn("This is just warning");
 console.timeEnd("Test");
 // console.clear();
 
