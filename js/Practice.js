@@ -1,18 +1,11 @@
-document.write("<h1> You're Result </h1>");
+document.write("<h1>Practice</h1>");
 
-var per = prompt("you're per is: ");
-if(per >= 90 && per <= 100){
-    document.write("merit");
-}else if(per >= 80 && per < 90){
-    document.write("You're first");
-}else if(per >= 60 && per < 80){
-    document.write("You're 2nd");
-}else if(per >= 40 && per < 60){
-    document.write("You're passed");
-}else if(per >= 20 && per < 40){
-    document.write("Promote");
-}else if(per >= 5 && per < 20){
-    document.write("Fail");
-}else{
-    document.write("Please enter the valid number...");
+var a = [10,20,30,40,50];
+document.write(a + "<br/>");
+
+var b = a.some(checkA);
+document.write(b + "<br/>");
+
+function checkA(a){
+    return(a >= 20);
 }

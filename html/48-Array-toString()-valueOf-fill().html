@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48 - Array.toString(), valueOf(), fill()</title>
+</head>
+<body>
+    <script>
+            document.write("<h1>Array.toString() - valueOf() - fill()</h1>");
+            var a = ["Bilal", "Owais", "Sheikh"];
+            var b = a.toString(" ");
+
+        //  Array.toString() 
+            document.write("<h2>toString()</h2>");
+            document.write(b + "<br/><br/>");
+
+        // valueOf() default function - like print same as array
+            document.write("<h2>valueOf() - by default same as print array</h2>");
+            document.write(a.valueOf() + "<br/>");
+
+        // fill() - create new Array & assign value - a static value print 
+            document.write("<h2>fill()</h2>");
+            document.write(a.fill("Owais"));
+    </script>
+</body>
+</html>

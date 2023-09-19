@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find() & findIndex()</title>
+</head>
+<body>
+    <h1>Array Methods - find() & findIndex()</h1>
+    <script>
+    
+    // find() 
+            var ages = [10,20,30,40];
+            document.write(ages + "<br/><br/><br/>");
+
+            var check = ages.find(checkValue);
+            document.write("This is greator than or equal to then print array value :" + check + "<br/><br/>");
+
+            function checkValue(age){
+                return age >= 18;
+            }
+          
+            document.write("<h2>findIndex()</h2>");
+    // findIndex() -- array index start from zero in both
+            var arr = [3,20,30,40,50];
+            document.write(arr + "<br/><br/>");
+
+            var fI = arr.findIndex(checkIndex);
+            document.write("This is greator than or equal to then print array index :" + fI + "<br/>");
+
+            function checkIndex(index){
+                return index <= 18;
+            }
+    </script>
+</body>
+</html>

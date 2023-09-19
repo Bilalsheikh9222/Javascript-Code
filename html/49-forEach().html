@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49 - forEach()</title>
+</head>
+<body>
+      <script>
+        document.write("<h1>forEach()</h1>");
+              var a = ["Owais", "Bilal", "Aman"];
+        // Inbuild fuunction()  
+            document.write("<h2>First Way - using inbuild function()</h2>");
+              a.forEach(function(value, index){
+                   document.write(index + " :" + value + "<br/>"); 
+              });
+
+        // 2nd Way
+            document.write("<h2>Second Way</h2>");
+              a.forEach(loop);
+              function loop(variable, index){
+                document.write(index + " :" + variable + "<br/>");
+              }
+      </script>
+</body>
+</html>
