@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>53 - Const - use - with - array() & Object</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Const use - with - array & Objects</h1>");
+      const a = ["bilal", "sheikh", 19];
+
+      a[0] = "Owais"; // reasign method direct value cannot reasign throw an error
+
+      document.write(a + "<br/>");
+
+      // Object
+      const b = {
+        name: "Tayyab",
+        age: 18,
+      };
+
+      b.name = "Owais"; // reasign value in object
+
+      document.write(b + "<br/>");
+      document.write(b.name + b.age + "<br/>");
+      console.log(b);
+    </script>
+  </body>
+</html>
