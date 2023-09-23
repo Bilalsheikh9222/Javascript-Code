@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 - Object</title>
+</head>
+<body>
+    <script>
+            document.write("<h1>Object - objects are capable of storing complex values</h1>");
+            //Properties --> firstName : ""
+            var a = {
+                 fName : 'Owais',
+                 lName : 'Sheikh',
+                 age : 19,
+                 email : "bilal@gmail.com",
+            // Array
+                 favMovie : ['Dhoom', 'Don', 'Hum'],
+            // Second Object - use in first object   
+                 living :{
+                    city : 'Karachi',
+                    country : "Pakistan",
+                 },
+
+            // function
+                 salary : function(){
+                    return 25000;
+                 },
+
+                 fullName : function(){
+                    return this.fName + " " + this.lName;
+                 },
+            }
+
+          //   console.log(a);
+          //   document.write(a.salary()); 
+            document.write(a.fullName() + "<br/>");
+            document.write(a.living.city);
+    </script>
+</body>
+</html>
