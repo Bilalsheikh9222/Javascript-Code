@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>56 - String - Methods</title>
+  </head>
+  <body>
+    <img src="img/Strings-Methods.jpg" alt="..." width="500px" /><br />
+    <script>
+      document.write("<h1>56 - String Methods()</h1>");
+      var str = "JavaScript is a Great is Language";
+
+      // 1- .length
+      var a = str.length;
+      document.write("This is a length of String: " + a + "<br/>");
+
+      // 2- .toLowerCase()
+      var b = str.toLowerCase();
+      document.write("toLowerCase(): " + b + "<br/>");
+
+      // 3- .toUpperCase()
+      var c = str.toUpperCase();
+      document.write("toUpperCase(): " + c + "<br/>");
+
+      // 4- includes
+      var d = str.includes("is"); // includes is a case sensative -- find word in string -- this is return true or false
+      document.write("includes(): " + d + "<br/>");
+
+      // 5- startsWith()
+      var e = str.startsWith("Java"); // case Sensative start with word - if word match so return true startsWith("Javascript")
+      document.write("startsWith(): " + e + "<br/>");
+
+      // 6- endsWith()
+      var f = str.endsWith("age"); // age. return false
+      document.write("endsWith(): " + f + "<br/>");
+
+      // 7- search()
+      var g = str.search("Language");
+      document.write("search(): " + g + "<br/>"); // if word does not exist so return -1 -- after 22 index start so return 22
+
+      // 8- match()
+      var h = str.match(/is/g); // g means globally
+      document.write("match(): " + h + "<br/>"); // make string to array -- return array
+
+      // 9- indexOf()
+      var i = str.indexOf("is"); // return first time index
+      document.write("indexOf(): " + i + "<br/>");
+
+      // 10- lastIndexOf()
+      var j = str.lastIndexOf("is"); // return last time index
+      document.write("lastIndexOf(): " + j + "<br/>");
+
+      // 11- replace()
+      // var k = str.replace("is", "not"); // first time index replace
+      var k = str.replace(/is/g, "not"); // Second method change globally
+      document.write("replace(): " + k + "<br/>");
+
+      // 12- trim()
+      var str1 = "          before & after: remove extra space ";
+      var l = str1.trim(); // remove extra spaces
+      alert(str1);
+      alert(l);
+      document.write("trim(): " + l + "<br/>");
+
+      // 13- charCodeAt
+      var m = str.charCodeAt(0); // return ASCI Code
+      document.write(
+        "<img src='img/ASCI-Method.jpg' alt='' width='50%' /> <br/>"
+      );
+      document.write(m + "<br/>");
+    </script>
+  </body>
+</html>
