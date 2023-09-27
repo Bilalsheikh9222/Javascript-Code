@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>57 - String-Method | Part 2</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>57-String-Method-pt-2</h1>");
+      document.write(
+        "<img src='img/ASCI-Method.jpg' alt='ASCII-Code-Image' width='50%'  /> <br/>"
+      );
+      var str = "This is a String";
+
+      // .charAt(); -- return character
+      var a = str.charAt(0);
+      document.write("charAt(0): " + a + "<br/>");
+
+      // .charCodeAt();
+      var b = str.charCodeAt(0);
+      document.write("charCodeAt(0): " + b + "<br/>"); // return ascii code
+
+      // String.fromCharCode();
+      var c = String.fromCharCode(65); // from keyboard return character - ASCII Code
+      document.write("fromCharCode(65): " + c + "<br/>");
+
+      // concat();
+      var d = str.concat(" Hello World");
+      document.write("concat(): " + d + "<br/>");
+
+      // split(); -- split() string and return array
+      var e = str.split(" ");
+      document.write("split(' '): " + e + "<br/>");
+
+      // repeat();
+      var f = str.repeat("2");
+      document.write("repeat('2'): " + f + "<br/>");
+
+      // slice(); --  -1 last index
+      var g = str.slice(1, 10);
+      document.write("slice(s,e): " + g + "<br/>");
+    </script>
+  </body>
+</html>
