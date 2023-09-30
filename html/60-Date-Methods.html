@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>60 - Date Methods</title>
+  </head>
+  <body>
+    <p>first create object</p>
+    <img src="img/60-Date-Object.jpg" width="25%" alt="" /> <br />
+    <h1>60 - Date-Methods</h1>
+    <img src="img/60-Date-Methods.png" width="50%" alt="" /> <br />
+    <script>
+      // take past date - past always return hour 0, Minutes 0, milliseconds 0.
+      //   var past = new Date("January 5 2015");
+
+      var now = new Date();
+
+      document.write(now + "<br/>");
+
+      // 1- toDateString()
+      document.write("toDateString(): " + now.toDateString() + "<br/>");
+
+      // 2- getDate() - simple date print only
+      document.write("getDate(): " + now.getDate() + "<br/>");
+
+      // 3- getFullYear() - get year
+      document.write("getFullYear(): " + now.getFullYear() + "<br/>");
+
+      // 4- getMonth() - index start 0 - like january
+      document.write("getMonth(): " + now.getMonth() + "<br/>");
+
+      // 5- getDay() - index start 0 - like sunday
+      document.write("getDay(): " + now.getDay() + "<br/>");
+
+      // 6- getHours() - return hour
+      document.write("getHours(): " + now.getHours() + "<br/>");
+
+      // 7- getMinutes() - return minute
+      document.write("getMinutes(): " + now.getMinutes() + "<br/>");
+
+      // 8- getSeconds()
+      document.write("getSeconds(): " + now.getSeconds() + "<br/>");
+
+      // 9- getMilliseconds()
+      document.write("getMilliseconds(): " + now.getMilliseconds() + "<br/>");
+
+      // 10- setDate() - in future
+      now.setDate(20);
+      document.write("setDate(): " + now + "<br/>");
+
+      // 11- setFullYear()
+      var future = new Date();
+      future.setFullYear(2024);
+
+      document.write("setFullYear:  " + future + "<br/>");
+
+      // 12- setMonth()
+      future.setMonth(4);
+      document.write("setMonth(): " + future + "<br/>");
+
+      // 13- setHours()
+      future.setHours(14); // 14 means 2
+      document.write("setHours(): " + future + "<br/>");
+
+      // 14 - full date
+      document.write(
+        "getDate(): " +
+          now.getMonth() +
+          "/" +
+          now.getDate() +
+          "/" +
+          now.getFullYear()
+      );
+    </script>
+  </body>
+</html>
