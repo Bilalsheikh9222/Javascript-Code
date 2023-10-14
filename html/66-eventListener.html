@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>66 - addEventListener | JS</title>
+</head>
+<body id="body">
+       <div id="header" class="flex justify-between px-auto items-center bg-green-400 text-white h-12">
+                <div class="text-3xl font-bold">LOGO</div>
+                <ul class="flex gap-4">
+                    <li>Home</li>    
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Blog</li>
+                </ul>
+       </div>
+        <!--    IMages  -->
+       <img src="image/66-eventListener.png" alt="" width="500px">
+       
+       <!-- div outer inner -->
+       <div id="outer" class=" w-[300px] h-[300px] bg-green-400">
+              <div id="inner" class=" w-[200px] h-[200px] bg-red-400"></div>
+       </div>
+       <!-- for Button -->
+       <div class="container h-screen w-full flex items-center justify-center">
+        <button id="first" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            Button
+        <button>
+       </div> 
+        
+    
+       <!-- Script -->
+       <script>
+                document.getElementById('first').onclick= btn;
+
+                function btn(){
+                    document.getElementById('body').style.background="orange"; 
+                }
+
+                //  eventListener
+                // document.getElementById('header').addEventListener('click',function(){
+                //     this.style.border = "10px dotted yellow";
+                // });
+
+                // // function bg(){
+                // //     document.getElementById('header').style.background = "green";
+                // // }
+
+                // document.getElementById('header').addEventListener('dblclick', function(){
+                //     this.style.background = "red";
+                // });
+
+                document.getElementById('outer').addEventListener('click',function(){
+                    alert('outer');
+                },true);
+                document.getElementById('inner').addEventListener('click',function(){
+                    alert('inner');    
+                },true); // false by default
+
+                document.getElementById('header').addEventListener('mouseleave', function(){
+                    // document.getElementById('header').style.background = "blue"; // both same
+                    this.style.background = "orange"; // both same
+                })
+       </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>68 - parentElement - & - parentNode</title>
+    <!-- Style -->
+    <style>
+            
+            #outer{
+                width:75%;
+                background:seagreen;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+            }
+            #inner{
+                width:50%;
+                background:purple;
+                gap:20px;
+            }
+            div{
+                background:yellowgreen;
+                width:100px;
+                display:inline-block;
+            }
+    </style>
+</head>
+<body>
+    <img src="image/68-parentElement-&-parentNode.png" width="400px" alt=""><br/>
+      <div id="outer">
+            <h2>Outer</h2>
+            <div id="inner">
+                  <h2>Inner</h2>
+                  <div>A</div>
+                  <div>B</div>
+                  <div id="child-c">C</div>
+                  <div>D</div>
+                  <div>E</div>
+            </div>
+      </div>  
+
+      <!-- Script -->
+      <script>
+                // 1- parentElement
+                document.getElementById('inner').parentElement.style.background = "orange";
+
+                var a = document.getElementById('inner').parentElement; // only return parents 
+                console.log(a);
+
+                // 2- parentNode
+                var b = document.getElementById('main').parentNode; // return something
+                console.log(b);
+      </script>
+</body>
+</html>

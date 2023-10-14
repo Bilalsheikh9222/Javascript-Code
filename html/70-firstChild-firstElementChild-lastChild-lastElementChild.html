@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70 - firstChild - firstElementChild - lastChild - lastElementChild | DOM Traversal Methods</title>
+    <style>
+            #outer{
+                background:tan;
+                width:70%;
+                height:60vh;
+                margin:0 auto;
+            }
+    
+            #inner{
+                background:pink;
+                border:1px solid plum;
+                display:flex;
+                align-items:center;
+                gap:40px;
+                width:60%;
+                height:40vh;
+                margin:0 auto;
+            }
+
+            #inner div{
+                width:100px;
+                height:100px;
+                background:seagreen;
+                display:flex; 
+                align-items: center;
+                justify-content:center;
+            }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+                <h1>Inner</h1>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+        </div>
+    </div>    
+    <script>
+            // 1- firstChild
+            var a = document.getElementById('inner').firstChild; // return 
+            console.log(a);
+            // document.getElementElementById('inner').firstChild;
+
+            // 2- firstElementChild
+            var b = document.getElementById('inner').firstElementChild; // return first element - like h1 or anything from tag
+            console.log(b);
+            document.getElementById('inner').firstElementChild.style.background = "red";
+
+            // 3- lastChild
+            var c = document.getElementById('inner').lastChild; // this return first thing on inner - like comment or anything
+            console.log(c);
+            // var e = document.getElementById('outer').lastChild.style.background = "orange;";
+            // console.log(e);
+
+            // 4- lastElementChild - return tags
+            var d = document.getElementById('inner').lastElementChild;
+            console.log(d);
+            document.getElementById('inner').lastElementChild.style.background = "blue";
+            document.getElementById('outer').lastElementChild.style.background = "orange";
+    </script>        
+</body>
+</html>

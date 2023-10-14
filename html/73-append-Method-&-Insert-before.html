@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>73 - part-2 - Create</title>
+    <style>
+            #work{
+                width:50%;
+                height:500px;    
+                background:seagreen;
+                color:white;
+                margin:0 auto;
+                padding:10px 50px;
+            }
+    </style>
+</head>
+<body>
+        <h1>73 - append-Method - & - insertBefore</h1>
+       <div id="work">
+            <h1>from html</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe magnam asperiores fugit ducimus, voluptas optio iusto inventore sequi at eligendi!</p>
+       </div> 
+    
+    <script>
+            var newElement = document.createElement('p');
+            
+            // console.log(newElement);
+            var newText = document.createTextNode('Create text using js and append using appendMethod');
+            
+            // console.log(newText);
+            
+            document.getElementById('work').appendChild(newElement); // appendChild in div
+            
+            // var newComment = document.createComment("create comment using js");
+            
+            // 1- appendChild - Method
+            newElement.appendChild(newText);
+
+            // newElement.appendChild(newComment);
+
+            console.log(newElement);
+
+
+            // 2- insertBefore
+            var target  = document.getElementById('work');
+            target.insertBefore(newElement, target.childNodes[0]); // pass only two parameters  
+
+    </script>
+</body>
+</html>

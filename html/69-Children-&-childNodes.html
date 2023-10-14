@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>69 - Traversal-Methods | Children - & - childNodes</title>
+    <style>
+             #outer{
+                background:purple;
+                width:50%;
+                height:60vh;
+            }
+            #inner{
+                /* display:flex; */
+                align-items:center;
+                background:seagreen;
+                /* color:white; */
+                justify-content:space-around;
+                gap:20px;
+                width:75%;
+                height:50vh;
+                display:flex;
+            }
+            #inner div{
+                width:100px;
+                height:100px;
+                background:orange;
+                margin:10px 0 0 0;
+            }
+            #inner h1{
+                display:inline-block;
+            }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h1>Outer</h1>
+          <div id="inner">
+            <h1>Inner</h1>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+          </div>
+    </div>
+
+        <!-- Script -->
+
+    <script>
+            // 1- children - children[index]
+            // var a = document.getElementById('inner').children; // return only childrens   
+            var a = document.getElementById('inner').children[1].style.background = "red"; // index - background color set   
+            console.log(a);
+
+            // 2- childrenNode - return all things - in console 
+            // var b = document.getElementById('inner').childNodes;
+            var b = document.getElementById('inner').childNodes[1].style.background = "yellow";
+            console.log(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>71 - nextSibling - previousSibling | Traversal-Methods-IV</title>
+    <style>
+            #outer{
+               background:seagreen; 
+               width:70%;
+               margin:0 auto;       
+            }
+
+            #inner{
+                background:peru;
+                width:50%;
+                height:30vh;
+                display:flex;
+                align-items:center;
+                margin:0 auto;
+            }
+
+            #inner div{
+                background:red;
+                width:50px;
+                height:50px;
+                margin:0 auto;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+    </style>
+</head>
+<body>
+        <div id="outer">
+            <h2>Outer</h2>
+                <div id="inner">
+                      <h2 id="child-head">Inner</h2>
+                      <div>A</div>
+                      <div>B</div>
+                      <div id="child-C">C</div>
+                      <div>D</div>
+                      <div id="child-E">E</div>
+                </div>
+        </div>
+
+                <!-- Script -->
+        <script>
+            //  only target <tags> // 1- nextElementSibling
+                var a = document.getElementById('child-head').nextElementSibling.style.background = "orange";
+                console.log(a);
+            
+            //  2- previousElementSibling
+                var b = document.getElementById('child-C').previousElementSibling.style.background = "purple";
+                console.log(b);
+
+            //  3- nextSibling - return all things 
+                var c = document.getElementById('child-C').nextSibling;
+                console.log(c);    
+
+            //  4- previousSibling - return all things
+                var d = document.getElementById('child-C').previousSibling;
+                console.log(d);
+        </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65 - DOM - Styling - Methods</title>
+    <style>
+            header{
+                background:seagreen;
+                height:100vh;
+            }
+            .full{
+                background:orange;
+                height:100vh;
+            }
+            .second{
+                background-color:crimson;
+            }
+            .third{
+                color:white;
+            }
+    </style>
+</head>
+<body>
+        <header id="header-top">
+             this is a main header
+                <div id="header">
+                    THis is a Div
+                </div>
+                <div id="header-bot">This is header bottom</div>
+        </header>
+
+        <script>
+                var element;
+                
+                document.getElementById('header').style.backgroundColor = "Blue";
+                document.getElementById('header').style.color = "White";
+                
+                // 2- className
+                // document.getElementById('header-top').className = 'full tclass'; // return String in console
+                // element = document.querySelector('#header-top').className;
+
+                // console.log(element);
+
+                // 3- classList
+                document.getElementById('header-top').classList = 'full tclass';
+                element = document.getElementById('header-top').classList;
+                console.log(element);
+
+
+                // classList methods
+                document.querySelector('#header-bot').classList.add('second','third'); // add or remove one class or multiple classes 
+                // element = document.getElementById('header-bot').classList.add('second');
+                console.log(element);
+
+        </script>
+</body>
+</html>

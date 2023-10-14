@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>64 - DOM - querySelector - & - querySelectorAll | JS</title>
+</head>
+<body>
+     <div id="heading">
+         <h1 id="primary" class="headclass" style="background:seagreen;">64 - DOM - querySelector - & - querySelectorAll</h1>  
+     </div>
+      <img src="image/64-New-DOM-Targeting-Methods.png" width="3s0%;" alt="">
+      <h1 id="heading" onclick="x()">64 - DOM - querySelector</h1>
+    <!-- Script -->
+    <script>
+        /* The querySelector() method returns the first child element that matches a specified CSS selector(s) of an element. 
+        Note: The querySelector() method only returns the first element that matches the specified selectors. 
+        To return all the matches, use the querySelectorAll() method instead. */
+            var element;
+            
+            element = document.querySelector('#heading h1'); // return first one
+            console.log(element);
+
+            element = document.querySelectorAll('#heading'); // return all
+            console.log(element);
+
+    </script>
+</body>
+</html>

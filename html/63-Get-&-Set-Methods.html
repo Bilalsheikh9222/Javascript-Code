@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>63 - GET & SET METhods | JS</title>
+</head>
+<body>
+    <div id="header" class="abc" style="background: red;" onclick="xyz()">
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, itaque?</p>
+            <p id="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus perferendis nam eos pariatur ex?</p>
+    </div>
+
+    <!-- Script -->
+    <script>
+            var element;
+
+            // element = document.getElementById('header').innerHTML; // not work on classElement
+            // console.log(element);
+
+            // element = document.getElementById('par').innerText; // not work on classElement don't know
+            // console.log(element);
+
+            // element = document.getElementById('header').getAttribute('id'); // return id name
+            // console.log(element);
+
+            // element = document.getElementById('header').getAttributeNode('onclick').value; // return attribute like this onclick="xyz()"
+            // console.log(element);
+
+            // element = document.getElementById('header').attributes; // make array return all attribute - .attributes[index] - attributes.[index].name or .value
+            // console.log(element);
+
+            // SET METHODS
+            
+            // 1- innerText & 2- innerHTML
+            // document.getElementById('header').innerHTML ='<h1>Change</h1>';
+            
+            // element = document.getElementById('header').innerHTML;
+
+            // console.log(element);
+
+            // 3- setAttribute 
+            element = document.getElementById('header').setAttribute('class','xyz'); // .setAttribute('style','border:10px solid black;');
+            element = document.getElementById('header').getAttribute('class');
+            console.log(element);
+
+            // 4- Attributes
+            document.getElementById('header').attributes[2].value = "background:blue;";
+
+            element = document.getElementById('header').getAttribute('style');
+
+            console.log(element);
+
+            // 5- remove Attribute 
+            document.getElementById('header').removeAttribute('style');
+
+            element = document.getElementById('header').getAttribute('style');
+
+            console.log(element);
+    </script>
+</body>
+</html>
