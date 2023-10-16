@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>75 - replaceChild - removeChild</title>
+  </head>
+  <body>
+    <!-- 
+        1- replaceChild
+        2- removeChild
+     -->
+    <ul id="list">
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Lemon</li>
+      <li>WaterMelon</li>
+    </ul>
+    <script>
+      var newElement = document.createElement("li");
+      var b = document.createTextNode("replace");
+      newElement.appendChild(b);
+
+      var target = document.getElementById("list");
+      var oldElement = target.children[0];
+
+      // 1- replaceChild
+      target.replaceChild(newElement, oldElement);
+
+      // 2- removeChild
+      var target = document.getElementById("list");
+      var oldElement = target.children[1];
+
+      target.removeChild(oldElement);
+    </script>
+  </body>
+</html>
