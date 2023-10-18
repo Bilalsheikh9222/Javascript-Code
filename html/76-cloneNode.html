@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>76 - cloneNode | JS</title>
+    <style>
+      body {
+        background: lightgreen;
+        color: white;
+      }
+      #container {
+        margin: 50px auto 0;
+        padding: 20px;
+        width: 300px;
+        height: 200px;
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>76 - cloneNode</h1>
+    <ul id="list-1">
+      <li style="background: orange; color: white">Orange</li>
+      <li style="background: yellowgreen; color: white">yellowgreen</li>
+      <li style="background: purple; color: white">Purple</li>
+      <li style="background: green; color: white">Green</li>
+    </ul>
+    <!-- list-Two -->
+    <ul id="list-2">
+      <li style="background: blue; color: white">Blue</li>
+      <li style="background: gray; color: white">Gray</li>
+    </ul>
+
+    <div id="container">
+      <h1>cloneNode</h1>
+    </div>
+    <!-- Script -->
+    <script>
+      var a = document.getElementById("list-1").children[2];
+      var b = a.cloneNode(true); // true means deep copy (copy all children) - by default false
+
+      document.getElementById("list-2").append(b);
+
+      var c = document.getElementById("list-1").children[2];
+      var d = c.cloneNode(true);
+
+      document.getElementById("container").append(d);
+    </script>
+  </body>
+</html>
