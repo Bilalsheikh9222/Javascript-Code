@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>77 - ContainsMethod | JS</title>
+    <style>
+      body {
+        font-size: 20px;
+      }
+      #container {
+        background: lightgoldenrodyellow;
+        border: 1px solid brown;
+        width: 50%;
+        height: 300px;
+        margin: 30px auto 0;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>77 - ContainsMethod</h1>
+    <div id="container">
+      <h2>Contains-Method</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+        deleniti.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Necessitatibus, assumenda.
+      </p>
+    </div>
+
+    <script>
+      // containsMethod - return only true or false
+      var a = document.getElementById("container");
+      // if abc id exist in container so return true otherwise return false
+      var b = document.getElementById("xyz");
+
+      var c = a.contains(b);
+      console.log(c);
+    </script>
+  </body>
+</html>
