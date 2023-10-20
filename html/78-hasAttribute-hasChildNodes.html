@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>78 - hasAttribute & hasChildNodes</title>
+    <style>
+      #container {
+        background: lightsalmon;
+        width: 600px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 30px auto 0;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>78 - hasAttribute & hasChildNodes</h1>
+    <div id="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolores
+        asperiores impedit. Officiis hic soluta sed modi, fugit quis, blanditiis
+        animi nobis ab quod sit!
+      </p>
+    </div>
+
+    <script>
+      // 1- hasAttribute  2- hasChildNodes - return true or false
+
+      // 1- hasAttribute
+      var a = document.getElementById("container");
+      var b = a.hasAttribute("class"); // if class or any Element exist so return true otherwise return false
+      console.log(b);
+
+      // 2- hasChildNodes - if will space so return true
+      var c = document.getElementById("container");
+      var d = c.hasChildNodes(); // if child exist in container so return true otherwise false
+      console.log(d);
+    </script>
+  </body>
+</html>
