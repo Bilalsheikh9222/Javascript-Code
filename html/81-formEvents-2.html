@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>81 - formEvents-2</title>
+  </head>
+  <body>
+    <!-- 1. Change (2.) Select (3.) Submit (4.) Invalid -->
+    <form action="" onsubmit="submitFunction()">
+      <label>Email or Name: </label>
+      <input
+        type="email"
+        value="someText"
+        placeholder="changeFunction"
+        id="fname"
+        onchange="changeFunction(this)"
+        onselect="selectFunction(this)"
+        oninvalid="alert('Please enter the correct email id.')"
+        required
+      /><br /><br />
+      <label>lName: </label>
+      <input type="text" id="lastName" /><br /><br />
+      <label>Countries: </label>
+      <select onfocus="focusFunction(this)" onchange="changeFunction(this)">
+        <option value="Palestine">Palestine</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Dubai">Dubai</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+    <div
+      id="target"
+      style="border: 1px solid red; width: 10%; height: 5vh; text-align: center"
+    ></div>
+    <!-- Script -->
+    <script>
+      // focus
+      function focusFunction(e) {
+        e.style.background = "seagreen";
+      }
+
+      // 1- change
+      function changeFunction(element) {
+        var a = element.value;
+        document.getElementById("target").innerHTML = a;
+      }
+
+      // 2- select - select something like text and trigger
+      function selectFunction(e) {
+        alert("selectFunction triggered ");
+      }
+
+      // 3- submit - on submit trigger
+      function submitFunction() {
+        var v = document.getElementById("fname").value;
+        alert(v + " you submited a form");
+      }
+
+      // 4- invalid
+    </script>
+  </body>
+</html>
