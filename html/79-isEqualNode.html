@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>79 - isEqualNode | JS</title>
+  </head>
+  <body>
+    <h1>79 - isEqualNode</h1>
+
+    <ul id="list-1">
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>Pineapple</li>
+      <li>Grapes</li>
+    </ul>
+
+    <ul id="list-2">
+      <li>Mango</li>
+      <li>Orange</li>
+      <!-- <li class="abc">Orange</li> - return false  -->
+      <li>Grapes</li>
+      <li>Pineapple</li>
+    </ul>
+
+    <script>
+      // Everything should be same - attributes and attributes value all thing - if same so return true otherwise false
+      var target1 = document.getElementById("list-1").firstElementChild;
+      var target2 = document.getElementById("list-2").children[1];
+      var equal = target1.isEqualNode(target2);
+      console.log(equal);
+    </script>
+  </body>
+</html>

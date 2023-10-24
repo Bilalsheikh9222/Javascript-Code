@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Name: </label>
+    <input
+      type="text"
+      id=""
+      onfocus="focusFunction(this)"
+      onblur="blurFunction(this)"
+      oninput="inputFunction(this)"
+    /><br /><br />
+    <label>Class: </label>
+    <input
+      type="text"
+      id=""
+      onfocus="focusFunction(this)"
+      onblur="blurFunction(this)"
+    /><br /><br />
+    <label>Country: </label>
+    <select id="countries">
+      <option value="">Palestine</option>
+      <option value="">Pakistan</option>
+      <option value="">Iran</option>
+    </select>
+    <br />
+    <br />
+    <div id="test" style="border: 1px solid red; width: 10%; height: 5vh"></div>
+
+    <script>
+      function focusFunction(element) {
+        element.style.background = "yellowgreen";
+      }
+
+      function blurFunction(element) {
+        element.style.background = "";
+      }
+
+      // only use textarea or inputbox
+
+      function inputFunction(element) {
+        var a = element.value;
+        document.getElementById("test").innerHTML = a;
+      }
+
+      // document.getElementById("input").addEventListener("focus", function () {
+      //   this.style.background = "tan";
+      // });
+      // document.getElementById("country").addEventListener("blur", function () {
+      //   this.style.background = "orange";
+      // });
+    </script>
+    <!-- focus blur input -->
+  </body>
+</html>
