@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>82 - setInterval - clearInterval</title>
+    <style>
+      #box {
+        height: 150px;
+        width: 150px;
+        background: purple;
+        border: 2px solid plum;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.) setInterval 2.) clearInterval -->
+    <h1>82 - setInterval - clearInterval</h1>
+    <div id="box"></div>
+
+    <script>
+      var a = 0;
+      // first --> function, value in milliseconds
+      var target = setInterval(A, 10);
+      function A() {
+        a = a + 10;
+        if (a == 500) {
+          clearInterval(target);
+        } else {
+          var Box = document.getElementById("box");
+          Box.style.width = a + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
