@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>83 - setTimeOut - clearTimeOut</title>
+    <style>
+            #box{
+                width: 50px;
+                height:50px;
+                background:seagreen;
+            }
+            
+            button{
+                padding:10px 20px;
+                border-radius:20px;
+                border:none;
+                cursor:pointer;
+                letter-spacing:2px;
+            }
+    </style>
+</head>
+<body>
+      <h1>83 - setTimeout - clearTimeout</h1>
+      <div id="box"></div>
+      <br/><br/>
+      <button onclick="stopAnimation()">Stop Animation</button>
+
+      <script>
+                // first put function and then millisecond
+                // i used inbuild function - it will run just one time
+                var target = setTimeout(function(){
+                    var a = document.getElementById('box');
+                    a.style.width = '500px';
+                }, 1000);
+
+                function stopAnimation(){
+                    clearTimeout(target);
+                }
+      </script>
+</body>
+</html>
