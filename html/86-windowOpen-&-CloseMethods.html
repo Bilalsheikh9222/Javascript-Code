@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>85 - windowOpen and CloseMethods</title>
+  </head>
+  <body>
+    <h1>85 - windowOpen and CloseMethods</h1>
+    <button onclick="openWin()">Open Window</button>
+    <button onclick="closeWin()">Close Window</button>
+
+    <script>
+      var myWindow; // declare
+      // These are use in 2nd parameter 1.)_blank,  2.)_parent, 3.)_self, 4.)_top -- but mostly use 1,2
+      function openWin() {
+        // window.open("https://www.youtube.com", "WebsiteName"); // nochange anywher
+        // window.open("https://www.youtube.com", "_parent"); // by default _blank
+        myWindow = window.open("", "", "width=500px, height=200px"); // last parameter just use in px - we cannot use - : - width:100px; likewise - use this =
+      }
+      function closeWin() {
+        myWindow.close();
+      }
+    </script>
+  </body>
+</html>
