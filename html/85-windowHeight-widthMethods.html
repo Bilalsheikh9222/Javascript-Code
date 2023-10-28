@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>85 - windowHeight - widthMethods</title>
+  </head>
+  <body onresize="resizeFunction()">
+    <!-- windowMethods - 1.) innerHeight (2.)outerHeight (3.)innerWidth (4.)outerWidth -->
+    <h1>85 - windowHeight - widthMethods | Window Methods</h1>
+
+    <script>
+      //  window methods
+      function resizeFunction() {
+        console.clear();
+        // 1- innerHeight
+        var iHeight = window.innerHeight;
+        console.log("innerHeight: " + iHeight);
+
+        // 2- outerHeight
+        var oHeight = window.outerHeight;
+        console.log("outerHeight: " + oHeight);
+
+        // 3- innerWidth
+        var iWidth = window.innerWidth;
+        console.log("innerWidth: " + iWidth);
+
+        // 4- outerWidth
+        var oWidth = window.outerWidth;
+        console.log("outerWidth: " + oWidth);
+      }
+    </script>
+  </body>
+</html>
