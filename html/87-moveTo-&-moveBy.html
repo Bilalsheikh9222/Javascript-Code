@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>87 - moveTo - & - moveBy</title>
+  </head>
+  <body>
+    <!-- 1.) moveTo  (2.) moveBy -->
+    <h1>87 - moveTo - & - moveBy</h1>
+    <button onclick="openWin()">openWin</button>
+    <button onclick="moveToWin()">moveToWin</button>
+    <button onclick="moveByWin()">moveByWin</button>
+
+    <script>
+      var myWin;
+      // you can see difference in both
+      function openWin() {
+        // myWin = window.open(
+        //   "",
+        //   "",
+        //   "width=500px, height=500px, top=100px, left=100px"
+        // );
+
+        // you can use your own website link or content then will be move Window otherwise not.
+        myWin = window.open(
+          "",
+          "",
+          "height=500px, width=500px, left=0px, top=0px"
+        );
+        myWin.document.write("<p>This is just dumy text</p>");
+      }
+      function moveToWin() {
+        // myWin.moveTo("writeLeftValue", "writeTopValue");
+        myWin.moveTo("0", "255");
+        myWin.focus();
+      }
+
+      function moveByWin() {
+        myWin.moveBy("400", "400");
+        myWin.focus();
+      }
+    </script>
+  </body>
+</html>
