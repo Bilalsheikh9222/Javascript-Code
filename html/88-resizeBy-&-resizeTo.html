@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>88 - resizeBy - & - resizeTo</title>
+  </head>
+  <body>
+    <!-- 1.) resizeBy (2.)resizeTo -->
+    <h1>88 - resizeBy - & - resizeTo</h1>
+    <button onclick="openWin()">openWin</button>
+    <button onclick="resizeByWin()">resizeBy</button>
+    <button onclick="resizeToWin()">resizeTo</button>
+    <script>
+      var myWin;
+      function openWin() {
+        myWin = window.open("", "", "width=200, height=200, top=50");
+      }
+
+      function resizeByWin() {
+        //            width, height
+        myWin.resizeBy(400, 400);
+        myWin.focus();
+      }
+
+      function resizeToWin() {
+        //            width, height
+        myWin.resizeTo(400, 400);
+        myWin.focus();
+      }
+    </script>
+  </body>
+</html>
