@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>91 - historyObject</title>
+</head>
+<body>
+        <!-- 1. Forward, (2.)Back, (3.)go -->
+        <h1>91 - historyObject</h1>
+        <button onclick="forwardF()">Forward</button>
+        <button onclick="backF()">Back</button>
+        <!-- Go - forward, back work both -->
+        <button onclick="goF()">Go</button>
+
+        <script>
+                // 1. Forward
+                function forwardF(){
+                    history.forward();
+                }
+
+                // 2. back
+                function backF(){
+                    history.back();
+                }
+
+                // 3. go
+                function goF(){
+                    history.go(-1); // for forward postive value like this 1, for back negative value -1
+                }
+        </script>
+</body>
+</html>
