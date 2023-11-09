@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang='en'>
+	   <head>
+			  <title>Document</title>
+			  <style>
+					button{
+						display:block;
+						margin:8px 0;
+					}
+			  </style>
+	   </head>
+<body>
+	  <h1>90 - locationObject</h1>
+	  <button onclick="setLocation()">setLocation</button>
+	  <button onclick="assignF()">assignMethod</button>
+	  <button onclick="reloadF()">reloadMethod</button>
+	  <button onclick="replaceF()">replaceMethod</button>
+	  <script>
+				/*	
+					window.location.href returns the href (URL) of the current page
+					window.location.hostname returns the domain name of the web host
+					window.location.pathname returns the path and filename of the current page
+					window.location.protocol returns the web protocol used (http: or https:)
+					window.location.assign() loads a new document
+				*/
+				console.log(location);
+				console.log(location.href);
+				
+				function setLocation(){
+					location.href = "https://www.yahoobaba.net";
+				}
+				
+				// Methods
+				function assignF(){
+					location.assign("https://www.google.com");
+				}
+				
+				function reloadF(){
+					location.reload();
+				}
+				
+				// you can see the difference between assign() and replace() - replace just remove the history 
+				function replaceF(){
+					location.replace("https://www.youtube.com");
+				}
+	  </script>
+</body>
+</html>
