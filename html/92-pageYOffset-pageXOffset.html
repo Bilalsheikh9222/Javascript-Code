@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>92-pageYOffset-pageXOffset</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+      #box {
+        width: 2200px;
+        height: 2200px;
+        background: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1.) pageYOffset , 2.) pageXOffset -->
+    <div id="box"></div>
+    <p>lorem2000</p>
+    <script>
+      window.addEventListener("scroll", function () {
+        console.clear();
+        console.log("pageYOffset: " + window.pageYOffset);
+        console.log("pageXOffset: " + window.pageXOffset);
+      });
+    </script>
+  </body>
+</html>
