@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="en">
+<head> 
+		<title>94 - scrollTop - scrollLeft</title>
+		<style>
+				#box{
+					width:300px;
+					height:300px;
+					background:pink;
+					border:1px solid black;
+					overflow:auto;
+				}
+				#inner-box{
+					width:2000px;
+					height:150px;
+					background:seagreen;
+				}
+		</style>
+</head>
+<body>	
+		<!-- this use for just tag not window -->
+		<h1>94 - scrollTop - scrollLeft</h1>
+		<div id="box">
+			<div id="inner-box"></div>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor doloremque corrupti fuga. Tenetur facere impedit porro nulla, hic odit, voluptas exercitationem adipisci magni, consectetur aspernatur? Ut ipsam sunt enim placeat earum, doloribus soluta cupiditate non ullam assumenda reiciendis. Nesciunt eum aperiam inventore recusandae libero magnam rem suscipit, laborum nobis asperiores aliquam accusantium! Repellendus, ad sed nisi a explicabo voluptatibus cum architecto nostrum fuga assumenda illum commodi, voluptatem facilis deleniti culpa perspiciatis laudantium nam omnis obcaecati est ipsa? Quis nesciunt sequi, quam illum ex porro rem animi optio possimus voluptatem voluptas. Obcaecati possimus voluptatem omnis suscipit quia impedit rem expedita doloremque laborum commodi sit libero adipisci quae porro ab nemo accusamus reiciendis maxime, non temporibus dolor iure illum ex. Voluptatibus natus minima hic repellat quaerat suscipit praesentium nihil eligendi a placeat alias veritatis, animi ab dolorem sequi nisi quae nemo sed iste libero eaque deleniti vitae autem! Suscipit repudiandae aliquid ducimus quo provident, impedit minus quis. Odio itaque aspernatur praesentium, exercitationem veritatis quibusdam blanditiis, ea ut numquam dicta nihil nulla? Quibusdam, voluptate perspiciatis accusamus hic dolore placeat asperiores expedita nesciunt necessitatibus eaque cumque minus cum debitis eveniet accusantium. Aliquid asperiores, at unde fugit optio, debitis deleniti sint voluptate quas omnis impedit ratione autem repellendus suscipit. Expedita ut accusantium, quod sint pariatur alias magni molestias exercitationem reiciendis quas, cupiditate, numquam officia eligendi. Vel, porro eaque expedita voluptate neque consectetur aspernatur optio architecto, in non perferendis? Odit fugiat optio minima corrupti fuga laboriosam beatae ipsum atque, iusto rem totam esse nihil distinctio quia voluptate maiores, nesciunt dicta iure ut dolores maxime in? A ducimus dicta totam? Totam reprehenderit fugit quas omnis repellat obcaecati tempore, facere saepe, rem exercitationem hic, maxime mollitia beatae ducimus numquam aliquam modi. Deleniti asperiores repudiandae nobis sunt a eaque, aliquam, inventore ea quo, eveniet ab odit aspernatur earum in iste reprehenderit ipsum accusantium laboriosam dicta dignissimos illum obcaecati. Assumenda, tempore? Porro veritatis ipsam praesentium dolores! Itaque perspiciatis aliquid aspernatur ab quibusdam labore dignissimos perferendis reiciendis reprehenderit. Quas repellendus soluta quod pariatur amet nisi unde in, saepe alias quaerat possimus optio nam et consequuntur ratione voluptates cum nihil reiciendis eum, ea, voluptate vero illo aspernatur ab. Vitae aperiam fuga molestiae animi quasi veritatis soluta quae non, eaque necessitatibus perferendis, saepe natus magni fugiat exercitationem aliquam voluptatem? Nulla, magni recusandae quas pariatur et ex eveniet temporibus natus incidunt eligendi? Dolor odio cumque deserunt eaque fuga reiciendis et, ut perspiciatis autem laborum maxime assumenda, doloribus atque! Expedita ex fuga atque exercitationem. Exercitationem pariatur quaerat vel voluptas alias aperiam similique earum iure quisquam voluptate mollitia commodi, maxime modi excepturi perspiciatis voluptatem quia in corporis aut officiis incidunt! Dolore alias delectus eaque! Quia dolorem culpa porro deserunt, a, ducimus dolore ea esse, perspiciatis at praesentium eaque amet placeat minus veritatis recusandae? Iusto id, dolor debitis dolores doloremque esse cumque enim, dicta, provident aperiam voluptatibus vero! Provident, incidunt ipsa eaque ea exercitationem vel veniam beatae commodi eligendi harum voluptates blanditiis! Nam repudiandae cupiditate sapiente dicta, minima perferendis necessitatibus praesentium, veritatis hic fuga reprehenderit illum repellendus!
+		</div>
+		
+		<script>
+				const target = document.querySelector('#box');
+				
+				// 1. scrollTop  2. scrollLeft
+				target.addEventListener('scroll', () => {
+					console.clear();
+					console.log('scrollTop: ' + target.scrollTop);
+					console.log('scrollLeft: ' + target.scrollLeft);
+				});
+		</script>
+</body>
+</html>
