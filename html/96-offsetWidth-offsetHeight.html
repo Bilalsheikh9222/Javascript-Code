@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+<head>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+		<title>Document</title>
+		<style>
+				*{
+					font-family: Poppins;
+				}
+				#box{
+					width:300px;
+					height:300px;
+					padding:10px;
+					background:orange;
+					border:10px solid #000;	
+					overflow:auto;
+				}
+				#inner-box{
+					width:600px;
+					height:100px;
+				}
+		</style>
+</head>
+<body>
+		<h1>96 - offsetWidth - offsetHeight</h1>
+		<div id="box">
+				<div id='inner-box'></div>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aliquid ducimus dolores eligendi labore amet dolore, cum repellendus pariatur id cupiditate harum dolorum enim nemo tempore. Voluptates possimus aliquam assumenda magnam sapiente. Facere ipsam neque tenetur excepturi inventore? Iusto fugiat, architecto nulla repellendus quod repudiandae quae iste quos id iure nobis voluptas aut quaerat incidunt, ducimus in quidem consectetur. Doloribus mollitia rem sint eligendi illum magni ducimus, inventore nesciunt soluta officia voluptatem cupiditate ad. Tenetur a quia iusto dicta iste doloremque tempora exercitationem cupiditate, eius vel nesciunt molestias fuga recusandae possimus! Cumque voluptatem ipsam velit esse aspernatur? Maxime, quos voluptas. Perspiciatis est distinctio unde sed ad ea vitae dicta magni nemo, cupiditate vero hic, cumque tempora ipsa assumenda ducimus praesentium mollitia. Exercitationem dicta possimus dolorum cum quo assumenda ex suscipit dolores blanditiis fuga rerum vel accusantium enim cupiditate, incidunt a tempora maxime aut cumque dolorem. Ad, distinctio voluptatum velit delectus iste minima non exercitationem corrupti, ipsum eligendi voluptate cum deserunt iusto aliquam est, rerum officia quas magni recusandae. Odio fugiat at quaerat aliquid obcaecati molestias, suscipit veritatis iure similique eos dolores error quibusdam? Tempore est numquam eos sapiente quibusdam neque. Aliquid quia ea porro at recusandae fugiat suscipit ipsam tenetur neque, iure molestiae. Dicta maiores corporis quibusdam laboriosam at eaque eius eos quod cumque sint! Harum iusto, sint exercitationem optio necessitatibus, sunt obcaecati vero deleniti reiciendis repudiandae iure delectus et dolorum cupiditate, ullam eaque distinctio facere. Sapiente deleniti voluptates quisquam maiores nobis? Magni dolorem quas quaerat voluptate in alias officia cum reiciendis cumque commodi, quasi magnam error laboriosam! Quisquam dignissimos quos nemo ipsa nam iusto, cumque ab at nesciunt in culpa dolores deleniti alias quaerat similique? Vero quis earum alias voluptatem, perspiciatis, aspernatur consectetur aliquid repellendus reprehenderit vel distinctio reiciendis assumenda impedit corporis? Deleniti ea laboriosam voluptate harum eligendi ut ex! Reprehenderit ex dolores minus sit temporibus, itaque impedit expedita enim unde est, quas eum at ratione totam, adipisci rerum esse illo? Maxime recusandae a explicabo nisi, cumque necessitatibus eum exercitationem accusamus consectetur facere deleniti sit odit veritatis eius nostrum minus quasi tempore velit incidunt provident eveniet perspiciatis voluptas corrupti culpa? Facilis recusandae commodi vitae autem in asperiores ipsum quae perferendis optio ratione, perspiciatis aperiam numquam est inventore quod nemo maxime? Velit, fugit quod illum cupiditate dolorum iure recusandae, consequuntur qui saepe assumenda laboriosam aspernatur autem possimus sint aliquam ad modi rerum sit! Facere suscipit rerum amet sapiente repellendus corporis ut? Natus blanditiis perspiciatis dignissimos a et? Officiis, beatae. Quibusdam rem officiis possimus beatae culpa, quo repudiandae, aliquid quae sapiente suscipit veniam quia repellat! Ullam voluptas deserunt repellendus ut officia! Sunt eius, reiciendis repellendus, perspiciatis pariatur deleniti illum fugit nulla ratione fugiat est cupiditate id consequatur! Nemo, provident. Architecto similique commodi reprehenderit! Explicabo error enim quidem reprehenderit aperiam obcaecati hic iste inventore ipsum, ea commodi maxime cupiditate, aliquam aliquid illum deleniti culpa totam nesciunt distinctio voluptate rem odio et? Modi aut maxime esse cumque natus nulla. Eius aut nihil excepturi? Ipsum totam at quod asperiores reiciendis voluptatem, rem non recusandae?
+		</div>
+		
+		<script>
+				var target = document.querySelector('#box');
+				
+				var Width = target.offsetWidth;
+				var Height = target.offsetHeight;
+				
+				console.log('offsetWidth: '+ Width);
+				console.log('offsetHeight: '+ Height);
+		</script>
+</body>
+</html>
